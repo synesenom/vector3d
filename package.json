@@ -2,6 +2,11 @@
   "name": "vector3d",
   "version": "1.0.0",
   "description": "Library to implement 3D vector algebra",
+  "author": {
+    "email": "enys.mones@gmail.com",
+    "name": "Enys Mones",
+    "url": "https://enysmones.com"
+  },
   "dependencies": {
   },
   "devDependencies": {
@@ -14,6 +19,7 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "scripts": {
+    "build": "./node_modules/.bin/rollup -c",
     "test": "./node_modules/.bin/_mocha -r esm",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=text --reporter=html _mocha --require @babel/register"
   }
