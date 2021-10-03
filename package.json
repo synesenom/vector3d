@@ -1,6 +1,6 @@
 {
   "name": "vector3d",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Library to implement 3D vector algebra",
   "author": {
     "email": "enys.mones@gmail.com",
