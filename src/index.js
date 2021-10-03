@@ -13,6 +13,8 @@ const Vector3d = function (x, y, z) {
 
   api.z = () => _.z
 
+  api.add = vec => Vector3d(_.x + vec.x(), _.y + vec.y(), _.z + vec.z())
+
   return api
 }
 
