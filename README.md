@@ -27,8 +27,14 @@ npm install vector3d
 
 ```javascript
 // Create vectors by assigning each coordinate.
-const x = Vector3d(1, 2, 3)
-const y = Vector3d(4, 5, 6)
+const x = Vector3d(1.2, 3.4, 5.6)
+const y = Vector3d(7.8, 9.1, 1.2)
 
+// Add two vectors.
+x.add(y)
+// => Vector3d(9.0, 12.5, 7.9)
 
+// Subtract two vectors.
+x.sub(y)
+// => Vector3d(-6.6, -5.7, 3.3)
 ```
