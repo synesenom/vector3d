@@ -15,6 +15,8 @@ const Vector3d = function (x, y, z) {
 
   api.scale = value => Vector3d(value * _.x, value * _.y, value * _.z)
 
+  api.mirror = () => Vector3d(-_.x, -_.y, -_.z)
+
   // TODO api.dot
   // TODO api.cross
   // TODO api.rotate
@@ -32,7 +34,7 @@ const Vector3d = function (x, y, z) {
 
   api.add = vec => Vector3d(_.x + vec.x(), _.y + vec.y(), _.z + vec.z())
 
-  api.sub = vec => Vector3d(_.x - vec.x(), _.y - vec.y(), _.z - vec.z())
+  api.sub = vec => api.add(vec.mirror())
 
   return api
 }
