@@ -11,7 +11,7 @@ export default {
   output: {
     file: 'dist/vector3d.min.js',
     format: 'umd',
-    name: 'vector3d',
+    name: 'Vector3d',
     indent: false,
   }
 };
