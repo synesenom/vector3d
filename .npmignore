@@ -1,0 +1,10 @@
+.idea/*
+
+docs/*
+node_modules/*
+
+.travis.yml
+.coveralls.yml
+
+.nyc_output/*
+coverage/*
