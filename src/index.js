@@ -19,6 +19,15 @@ const Vector3d = function (x, y, z) {
   const api = {}
 
   /**
+   * Returns a deep copy of the vector.
+   *
+   * @method copy
+   * @memberOf Vector3d
+   * @return {Vector3d} A new vector which is the copy of the current one.
+   */
+  api.copy = () => Vector3d(_.x, _.y, _.z)
+
+  /**
    * Returns or sets the X coordinate.
    *
    * @method x

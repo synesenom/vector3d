@@ -21,6 +21,14 @@ describe('Vector3d', () => {
     })
 })
 
+describe('.copy', () => {
+    it('should return a deep copy of the vector', () => {
+        const vec = Vector3d(1.2, 3.4, 5.6)
+        assert(vec !== vec.copy())
+        assertVectorEqual(vec.copy(), [1.2, 3.4, 5.6])
+    })
+})
+
 describe('.x', () => {
     it('should return the X coordinate', () => {
         assertAlmostEqual(Vector3d(1.2, 3.4, 5.6).x(), 1.2)
